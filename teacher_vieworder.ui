@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacher_viewOrder</class>
+ <widget class="QDialog" name="teacher_viewOrder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog {
+    background-color: #1e1e1e;          /* 深空黑背景 */
+    color: #ffffff;                      /* 默认文字白色 */
+}
+
+QLabel {
+    color: #ffffff;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;微软雅黑&quot;;
+    font-size: 14px;
+    font-weight: bold;                  /* 标签加粗更好看 */
+}
+
+QLineEdit {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    selection-background-color: #0078d4;
+}
+QLineEdit:focus {
+    border: 2px solid #0078d4;           /* 获得焦点蓝色边框 */
+    background-color: #333333;
+}
+
+/* 密码框也生效 */
+QLineEdit[echoMode=&quot;2&quot;] {
+    font-size: 18px;                    /* 密码点更大一点 */
+}
+
+/* 登录 &amp; 取消按钮 */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #383838, stop:1 #2d2d2d);
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 100px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #484848, stop:1 #383838);
+    border: 1px solid #0078d4;
+}
+QPushButton:pressed {
+    background-color: #0078d4;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+
+QDialog {
+    border-radius: 16px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_tip">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>请选择您要审核的预约</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_order">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>541</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_ture">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>审核通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_false">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>审核不通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancle">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>270</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消审核</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

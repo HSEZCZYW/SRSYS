@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacher_login</class>
+ <widget class="QDialog" name="teacher_login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>522</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog {
+    background-color: #1e1e1e;          /* 深空黑背景 */
+    color: #ffffff;                      /* 默认文字白色 */
+}
+
+QLabel {
+    color: #ffffff;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;微软雅黑&quot;;
+    font-size: 14px;
+    font-weight: bold;                  /* 标签加粗更好看 */
+}
+
+QLineEdit {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    selection-background-color: #0078d4;
+}
+QLineEdit:focus {
+    border: 2px solid #0078d4;           /* 获得焦点蓝色边框 */
+    background-color: #333333;
+}
+
+/* 密码框也生效 */
+QLineEdit[echoMode=&quot;2&quot;] {
+    font-size: 18px;                    /* 密码点更大一点 */
+}
+
+/* 登录 &amp; 取消按钮 */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #383838, stop:1 #2d2d2d);
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 100px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #484848, stop:1 #383838);
+    border: 1px solid #0078d4;
+}
+QPushButton:pressed {
+    background-color: #0078d4;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+
+QDialog {
+    border-radius: 16px;
+}</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>27</y>
+     <width>281</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_teacherID">
+      <property name="text">
+       <string>工号:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_name">
+      <property name="text">
+       <string>姓名:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_name"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_password">
+      <property name="text">
+       <string>密码:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_title">
+      <property name="text">
+       <string>教师登录界面</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_password"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEdit_number"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_login">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>162</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>230</y>
+     <width>162</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

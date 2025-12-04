@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Students_applyOrder_Window</class>
+ <widget class="QDialog" name="Students_applyOrder_Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog {
+    background-color: #1e1e1e;          /* 深空黑背景 */
+    color: #ffffff;                      /* 默认文字白色 */
+}
+
+QLabel {
+    color: #ffffff;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;微软雅黑&quot;;
+    font-size: 14px;
+    font-weight: bold;                  /* 标签加粗更好看 */
+}
+
+QLineEdit {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    selection-background-color: #0078d4;
+}
+QLineEdit:focus {
+    border: 2px solid #0078d4;           /* 获得焦点蓝色边框 */
+    background-color: #333333;
+}
+
+/* 密码框也生效 */
+QLineEdit[echoMode=&quot;2&quot;] {
+    font-size: 18px;                    /* 密码点更大一点 */
+}
+
+/* 登录 &amp; 取消按钮 */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #383838, stop:1 #2d2d2d);
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 100px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #484848, stop:1 #383838);
+    border: 1px solid #0078d4;
+}
+QPushButton:pressed {
+    background-color: #0078d4;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+
+QDialog {
+    border-radius: 16px;
+}</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>77</y>
+     <width>301</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboBox_date"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboBox_time"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBox_room"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>时间</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>机房</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox_persons"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_sure">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>240</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>162</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tip">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>40</y>
+     <width>40</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
